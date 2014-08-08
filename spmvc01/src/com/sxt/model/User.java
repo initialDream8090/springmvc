@@ -1,4 +1,4 @@
-package com.sxt.po;
+package com.sxt.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

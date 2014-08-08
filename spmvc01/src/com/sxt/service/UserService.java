@@ -5,7 +5,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 import com.sxt.dao.UserDao;
-import com.sxt.po.User;
+import com.sxt.model.User;
 
 public class UserService {
 	

@@ -21,12 +21,16 @@ http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
 		
 	<bean id="dataSource"  
             class="org.apache.commons.dbcp.BasicDataSource">  
-            <property name="driverClassName"  
-                value="com.mysql.jdbc.Driver">  
-            </property>  
+            <!-- mysql配置 -->
+            <!-- <property name="driverClassName"  value="com.mysql.jdbc.Driver"></property>  
             <property name="url" value="jdbc:mysql://localhost:3306/myhib"></property>  
             <property name="username" value="root"></property>  
-            <property name="password" value="123456"></property>
+            <property name="password" value="123456"></property> -->
+            <!-- sqlserver配置 -->
+            <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>
+            <property name="url" value="jdbc:sqlserver://localhost:1433;DatabaseName=testdb"></property>  
+            <property name="username" value="sa"></property>  
+            <property name="password" value="sa"></property>
     </bean>  
 
    <bean id="sessionFactory"  

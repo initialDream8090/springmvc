@@ -10,17 +10,20 @@ public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
-	private String uname;
+	private String name;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getUname() {
-		return uname;
+	public String getName() {
+		return name;
 	}
-	public void setUname(String uname) {
-		this.uname = uname;
+	public void setName(String name) {
+		this.name = name;
 	}
+	
+	
+	
 }

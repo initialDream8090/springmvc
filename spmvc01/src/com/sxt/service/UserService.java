@@ -14,7 +14,7 @@ public class UserService {
 	public void add(String uname){
 		System.out.println("UserService.add()");
 		User u = new User();
-		u.setUname(uname);
+		u.setName(uname);
 		userDao.add(u);
 	}
 

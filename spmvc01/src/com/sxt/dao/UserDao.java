@@ -5,13 +5,13 @@ import javax.annotation.Resource;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Component;
 
-import com.sxt.po.User;
+import com.sxt.po.Student;
 
 public class UserDao {
 	
 	private HibernateTemplate hibernateTemplate;
 	
-	public void add(User u){
+	public void add(Student u){
 		System.out.println("UserDao.add()");
 		hibernateTemplate.save(u);
 	}

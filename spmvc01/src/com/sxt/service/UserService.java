@@ -5,7 +5,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 import com.sxt.dao.UserDao;
-import com.sxt.po.User;
+import com.sxt.po.Student;
 
 public class UserService {
 	
@@ -13,7 +13,7 @@ public class UserService {
 	
 	public void add(String uname){
 		System.out.println("UserService.add()");
-		User u = new User();
+		Student u = new Student();
 		u.setName(uname);
 		userDao.add(u);
 	}
